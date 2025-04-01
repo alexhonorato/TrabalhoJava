@@ -55,6 +55,6 @@ public class GerenciarConta {
             }
         } while (opcao != 0);
 
-        input.close(); // Fechar o scanner para evitar vazamento de recurso
+        input.close(); 
     }
 }
