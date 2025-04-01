@@ -7,15 +7,14 @@ public class GerenciarConta {
         System.out.println("*** SEJA BEM-VINDO ***");
         System.out.print("Digite o número da conta: ");
         int numeroConta = input.nextInt();
-        input.nextLine(); // Consumir a quebra de linha
-
+        input.nextLine();
         System.out.print("Digite o nome do titular: ");
         String nomeTitular = input.nextLine();
 
         System.out.print("Digite o saldo inicial: ");
         double saldoInicial = input.nextDouble();
 
-        // Criando objeto ContaBancaria com saldo inicial
+      
         ContaBancaria conta = new ContaBancaria(numeroConta, nomeTitular, saldoInicial);
 
         int opcao;
@@ -40,12 +39,12 @@ public class GerenciarConta {
                 case 2:
                     System.out.print("Digite o valor do depósito: ");
                     double deposito = input.nextDouble();
-                    conta.deposito(deposito); // Agora o depósito realmente acontece
+                    conta.deposito(deposito); 
                     break;
                 case 3:
                     System.out.print("Digite o valor do saque: ");
                     double saque = input.nextDouble();
-                    conta.saque(saque); // Agora o saque realmente acontece
+                    conta.saque(saque); 
                     break;
                 case 0:
                     System.out.println("Encerrando o sistema...!");
