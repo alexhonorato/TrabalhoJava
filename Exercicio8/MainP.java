@@ -8,7 +8,7 @@ public class MainP {
         List<Pizza> cardapio = new ArrayList<>();
         List<Pedido> pedidos = new ArrayList<>();
 
-        // Adicionando pizzas ao cardápio
+        
         cardapio.add(new Pizza("Cinco queijos", 35.0, "Molho, Catupiry, Gorgonzola, Parmesão, Provolone, Cheddar e Orégano"));
         cardapio.add(new Pizza("Strogonoff de Carne", 45.5, "Molho, Strogonoff de carne, Batata palha e Orégano"));
         cardapio.add(new Pizza("Sedução", 30.0, "Leite condensado, Chocolate branco, Coco e Morango"));
@@ -89,24 +89,25 @@ public class MainP {
                         System.out.printf("Média de preço dos pedidos: R$ %.2f\n", mediaValores);
                     }
                     break;
-                }
-                case 5: {
-                    System.out.print("\nInforme o nome da nova pizza: ");
-                    String nome = scanner.nextLine();
+                // }
+                    //tentando criar uma nova opcao para o cliente add novos sabores, mas sem sucesso de implementação.
+                // case 5: {
+                //     System.out.print("\nInforme o nome da nova pizza: ");
+                //     String nome = scanner.nextLine();
 
-                    System.out.print("Informe o preço da nova pizza: ");
-                    double valor = scanner.nextDouble();
-                    scanner.nextLine();
+                //     System.out.print("Informe o preço da nova pizza: ");
+                //     double valor = scanner.nextDouble();
+                //     scanner.nextLine();
 
-                    System.out.print("Informe os ingredientes da nova pizza: ");
-                    String ingredientes = scanner.nextLine();
+                //     System.out.print("Informe os ingredientes da nova pizza: ");
+                //     String ingredientes = scanner.nextLine();
 
-                    Pizza novaPizza = new Pizza(nome, valor, ingredientes);
-                    cardapio.add(novaPizza);
+                //     Pizza novaPizza = new Pizza(nome, valor, ingredientes);
+                //     cardapio.add(novaPizza);
 
-                    System.out.println("\n*---* Nova pizza adicionada com sucesso! *---*");
-                    break;
-                }
+                //     System.out.println("\n*---* Nova pizza adicionada com sucesso! *---*");
+                //     break;
+                // }
                 case 0:
                     System.out.println("Saindo do sistema...");
                     break;
